@@ -1,0 +1,167 @@
+body {
+  font-family: Futura, sans-serif;
+  text-transform: uppercase;
+  font-size: 11pt;
+  line-height: 15pt;
+}
+
+#color-meaning {
+  //background-image: url(http://jasonathen.com/wp-content/uploads/2012/05/color-meanings.gif);
+  background-size: 600px;
+  overflow: hidden;
+  width: 150px;
+  height: 290px;
+  float: left;
+  margin: 5px;
+}
+
+#color-meaning .blue {
+  background-color: #0066CC;
+  height: 120px;
+  margin-bottom: 15px;
+  width: 100%;
+  line-height: 120px;
+  color: white;
+}
+
+#number-meaning .number {
+  font-size: 50pt;
+  color: #0066CC;
+  height: 135px;
+  line-height: 120px;
+}
+
+img {
+  height: 100px;
+}
+
+#owl .owl {
+  height: 135px;
+}
+
+.meanings {
+  height: 290px;
+  width: 150px;
+  float: left;
+  margin: 5px;
+  text-align: center;
+}
+
+#logo {
+  clear: both;
+  background-image: url(../logo_3000.png);
+  height: 480px;
+  width: 480px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#logobw {
+  float:left;
+  text-align: center;
+  width: 240px;
+  height: 250px;
+  background-image: url(../logo_3000_transparent_bw.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#logoinv {
+  color: white;
+  text-align: center;
+  float: left;
+  width: 240px;
+  height: 250px;
+  background-image: url(../logo_3000_transparent_bw_inverted.png);
+  background-color: #0066CC;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#colors {
+  clear: both;
+  width: 480px;
+  height: 290px;
+}
+
+#colors .meanings {
+  border: 1px solid black;
+  margin: 3px;
+}
+
+#colors .blue {
+  background-color: #0066CC;
+}
+#colors .white {
+  background-color: #ffffff;
+}
+#colors .black {
+  background-color: #000000;
+}
+
+#colors .hex {
+  background: white;
+  margin-top: 240px;
+  height: 49px;
+  border-top: 1px solid black;
+  line-height: 50px;
+}
+
+#steamlogos {
+  width: 480px;
+  height: 320px;
+  background-image: url(../steam_variations.jpg);
+  background-size: cover;
+  clear: both;
+}
+  
+#roadmap {
+  width: 480px;
+  height: auto;
+}  
+
+#roadmap .achievement {
+  background: url(../roadmap.png);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: .4;
+  width: 480px;
+}
+
+#roadmap .achievement-1 {
+  height: 120px;
+  background-position: 0 0px;
+}
+
+#roadmap .achievement-2 {
+  height: 180px;
+  background-position: 0 -120px;
+}
+
+#roadmap .achievement-3 {
+  height: 170px;
+  background-position: 0 -300px;
+}
+
+#roadmap .unlocked {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+#clothing { 
+  width: 480px;
+}
+
+#clothing img {
+  width: 220px;
+  height: 220px;
+  margin: 5px;
+  padding: 0;
+}
+
+#clothing img:hover {
+  cursor: pointer;
+}
