@@ -1,0 +1,172 @@
+/* Futura-Light webfont (new-bulletproof) */ 
+@font-face {
+    font-family: 'Futura-Light';
+    src: url('../font/Futura-Light.eot?#iefix') format('embedded-opentype'),
+         url('../font/Futura-Light.woff') format('woff'),
+         url('../font/Futura-Light.ttf')  format('truetype'),
+         url('../font/Futura-Light.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'csgo';
+	src: url('../font/cs_regular.eot?#iefix') format('embedded-opentype'),
+		 url('../font/cs_regular.ttf') format('truetype') ;
+}
+
+@font-face {
+	font-family: 'league';
+	src: url('../font/league.eot?#iefix') format('embedded-opentype'),
+		 url('../font/league.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'iracing';
+	src: url('../font/iracing.eot?#iefix') format('embedded-opentype'),
+		 url('../font/iracing.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'wow';
+	src: url('../font/wow.eot?#iefix') format('embedded-opentype'),
+		 url('../font/wow.ttf') format('truetype');
+}
+
+/* VARIABLES */
+/*
+  
+dark blue: #000099
+light blue: #0066CC
+text-color: #000
+heading-font: Futura-Light
+*/
+
+/* COLORS */
+.color-light-blue  { color: #0066cc; }
+.bg-light-blue { background-color: #0066cc; }
+
+.color-dark-blue { color: #000099; }
+.bg-dark-blue { background-color: #000099; }
+
+
+/*
+$link-color: #369400;
+$dark-color: #2b3039;
+$border-color: #D7D7D7;
+$bevel-color: #FAFAFA;
+$light-text-color: #999999;
+$text-color: #666666;
+$heading-font: 'Futura-Light', Arial, sans-serif;
+$serif-font: 'Open Sans', Georgia, serif;
+$body-font: 'Futura-Light', Arial, sans-serif;
+$icon-font: ;
+$gray-color: #F1F1F1;
+*/
+
+body {  
+  font-family: Futura-Light;
+  margin-top: 130px;
+}
+
+h1 {
+  font-family: Futura-Light;
+  color: #000099;
+}
+
+#navigation-bar {
+  height: 115px;
+  overflow: hidden;
+}
+
+.navbar-brand img {
+  height: 80px;
+  width: 80px;
+}
+
+.header {
+  /*
+  position: relative;
+  left: 0px;
+  right: 0px;
+  margin: 0px;
+  padding: 0px;
+  */
+  height: 400px;
+  background-image: url(http://fotonin.com/data_images/out/12/861671-night-wallpaper.jpg);
+  background-size: cover;
+  background-position: 0px 70%;
+}
+
+.header h1 {
+  background-color: #f1f1f1;	
+  width: auto;
+}
+
+.header p {
+  background-color: #c2c2c2;
+}
+
+span.game {
+  color: white;
+}
+
+span.game-icon {
+  height: 16px;
+  width: 16px;
+}
+
+#games {
+}
+
+.gamechooser, .gamechooser .fa-stack{
+  color: #000000; 
+  transition: all 1s;
+}
+
+.gamechooser:hover, .gamechooser .fa-stack:hover {
+  color: #0066cc;
+  cursor: pointer;
+}
+
+span.dota2 {
+  background-image: url('../img/games/dota2.png');
+}
+
+span.lol:after {
+  font-family: league;
+  content: "L";
+  font-size: 80pt;
+}
+
+span.csgo:after {
+ font-family: csgo;
+ content: "cs-go";
+ font-size: 28pt;
+}
+
+span.csgo-icon:after {
+  font-family: csgo;
+  content: "-";
+}
+
+span.iracing:after {
+  font-family: iracing;
+  content: "iRacing";
+  font-size: 22pt;
+}
+
+span.wow:after {
+  margin-left: -5px;
+  font-family: wow;
+  content: "W";
+  font-size: 70pt;
+  line-height: 120pt;
+}
+
+.spacing-vertical {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.align-vertical-middle {
+  vertical-align: middle;
+}
