@@ -61,7 +61,6 @@ $body-font: 'Futura-Light', Arial, sans-serif;
 $icon-font: ;
 $gray-color: #F1F1F1;
 */
-
 body {  
   font-family: Futura-Light;
   margin-top: 130px;
@@ -169,4 +168,17 @@ span.wow:after {
 
 .align-vertical-middle {
   vertical-align: middle;
+}
+
+#clothing a {
+  text-align: center;
+}
+
+#clothing a:hover {
+  cursor: pointer;
+}
+
+#about img {
+  -webkit-clip-path: circle(50.0% at 50% 50%);
+  clip-path: circle(50.0% at 50% 50%);
 }
