@@ -179,6 +179,32 @@ span.wow:after {
 }
 
 #about img {
-  -webkit-clip-path: circle(50.0% at 50% 50%);
+  /*-webkit-clip-path: circle(50.0% at 50% 50%);
   clip-path: circle(50.0% at 50% 50%);
+  */
+  border-radius: 50%;
+  width: 115px;
+  height: 115px;
+  border: 5px solid #0066cc;
+  transition: all 1s;
+}
+
+#about img:hover {
+  background: #66cc00;
+  //border-color: #cc6600;
+}
+
+figcaption {
+  padding: 5px;
+  position: relative;
+  left: 50%; 
+  margin-left: -85px;
+  width: 170px;
+  text-align: justify;
+}
+
+
+figcaption.top {
+  text-align: center;
+  font-weight: bold;
 }
