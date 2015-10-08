@@ -313,8 +313,8 @@ figcaption {
   padding: 5px;
   position: relative;
   left: 50%; 
-  margin-left: -85px;
-  width: 170px;
+  margin-left: -100px;
+  width: 200px;
   text-align: justify;
 }
 
