@@ -31,6 +31,12 @@
 		 url('../font/wow.ttf') format('truetype');
 }
 
+a, a:hover, a:active, a:visited {
+  color: #000;
+  text-decoration: none;
+  font-weight: normal;
+}
+
 /* VARIABLES */
 /*
   
@@ -64,6 +70,7 @@ $gray-color: #F1F1F1;
 body {  
   font-family: Futura-Light;
   margin-top: 130px;
+  font-size: 13pt;
 }
 
 h1 {
@@ -71,9 +78,20 @@ h1 {
   color: #000099;
 }
 
+.container-fluid {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
 #navigation-bar {
   height: 115px;
   overflow: hidden;
+}
+
+.navbar ul {
+  margin-top: 15px;
+  font-size: 18pt;
 }
 
 .navbar-brand img {
@@ -81,27 +99,40 @@ h1 {
   width: 80px;
 }
 
+.navbar .container-fluid {
+  margin: 0;
+}
+
 .header {
-  /*
-  position: relative;
-  left: 0px;
-  right: 0px;
-  margin: 0px;
-  padding: 0px;
-  */
-  height: 400px;
+  height: 300px;
   background-image: url(http://fotonin.com/data_images/out/12/861671-night-wallpaper.jpg);
   background-size: cover;
   background-position: 0px 70%;
+  background-repeat: no-reapat;
 }
 
-.header h1 {
-  background-color: #f1f1f1;	
-  width: auto;
+.header-staff {
+  background-image: url(http://dottingandcrossing.com/wp-content/uploads/2014/11/colorful-balloons-lomo-free-desktop-wallpaper-3840x2400.jpg);
+  background-image: url(http://www.pptbackgrounds.net/uploads/teamwork-backgrounds-wallpapers.jpg);
+  background-image: url(http://www.wallpapersdb.org/wallpapers/world/bridge_lights_1920x1080.jpg);
+  background-position: 0px -40%;
+  text-align: right;
+  background-attachment: fixed;
 }
 
-.header p {
-  background-color: #c2c2c2;
+.header-teams {
+  background-image: url(http://1.bp.blogspot.com/-c1cplBOtMS8/TfH21RmOKrI/AAAAAAAAADE/n6ETZ3E0_lQ/s1600/FIASCO_Wallpaper1%2525281024x768%252529.jpg);
+  background-image: url(http://www.for-startups.org/hs-fs/hub/493467/file-2612127922-jpg/Blog_Backgrounds/Blurred-2.jpg?t=1443008846292);
+  background-attachment: fixed;
+  text-align: left;
+  background-position: 0px 20%;
+}
+
+.header .quote {
+  color: #fff;
+  padding-top: 100px;
+  font-size: 28pt;
+  text-shadow: 1px 1px 2px #000;
 }
 
 span.game {
@@ -113,7 +144,28 @@ span.game-icon {
   width: 16px;
 }
 
+#about .staff-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #0066cc;
+  transition: all 1s;
+}
+
+#about .bubble-img {
+  margin-top: -45px;
+}
+
+#about .staff-img:hover {
+  background: #66cc00;
+}
+
 #games {
+}
+
+.gamechooser {
+  padding-top: 35px;
+  padding-bottom: 30px;
 }
 
 .gamechooser, .gamechooser .fa-stack{
@@ -121,9 +173,87 @@ span.game-icon {
   transition: all 1s;
 }
 
-.gamechooser:hover, .gamechooser .fa-stack:hover {
-  color: #0066cc;
+.gamechooser:hover {
   cursor: pointer;
+}
+
+.bubble-wrapper:hover .bubble-img {
+  opacity: 1;
+  width: 70px;
+  height: 70px;
+}
+
+.bubble-img {
+  color: #000;
+  line-height: 60px;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  transition: all 1s;
+}
+
+.bubble-img:hover{
+  border-color: #66cc00;
+}
+
+.bubble-wrapper:hover .top-center {
+  top: -27px;
+  left: 122px;
+}
+
+.bubble-wrapper:hover .top-right {
+  top: 5px;
+  left: 202px;
+}
+
+.bubble-wrapper .mid-right {
+  transition-delay: .1s;
+}
+
+.bubble-wrapper:hover .mid-right {
+  top: 87px;
+  left: 235px;
+}
+
+.bubble-wrapper .bottom-right {
+  transition-delay: .2s;
+}
+
+.bubble-wrapper:hover .bottom-right {
+  top: 169px;
+  left: 202px;
+}
+
+.bubble-wrapper .bottom-left {
+  transition-delay: .3s;
+}
+
+.bubble-wrapper:hover .bottom-left {
+  top: 169px;
+  left: 38px;
+}
+
+.bubble-wrapper .mid-left {
+  transition-delay: .4s;
+}
+
+.bubble-wrapper:hover .mid-left {
+  top: 87px;
+  left: 5px;
+}
+
+.bubble-wrapper .top-left {
+  transition-delay: .5s;
+}
+
+.bubble-wrapper:hover .top-left {
+  top: 5px;
+  left: 38px;
 }
 
 span.dota2 {
@@ -154,11 +284,11 @@ span.iracing:after {
 }
 
 span.wow:after {
-  margin-left: -5px;
+  margin-left: -7px;
   font-family: wow;
   content: "W";
   font-size: 70pt;
-  line-height: 120pt;
+  line-height: 140pt;
 }
 
 .spacing-vertical {
@@ -178,22 +308,6 @@ span.wow:after {
   cursor: pointer;
 }
 
-#about img {
-  /*-webkit-clip-path: circle(50.0% at 50% 50%);
-  clip-path: circle(50.0% at 50% 50%);
-  */
-  border-radius: 50%;
-  width: 115px;
-  height: 115px;
-  border: 5px solid #0066cc;
-  transition: all 1s;
-}
-
-#about img:hover {
-  background: #66cc00;
-  //border-color: #cc6600;
-}
-
 figcaption {
   padding: 5px;
   position: relative;
@@ -203,8 +317,12 @@ figcaption {
   text-align: justify;
 }
 
-
 figcaption.top {
   text-align: center;
   font-weight: bold;
+}
+
+.footer {
+  background: #121212;
+  height: 400px;
 }
