@@ -14,12 +14,44 @@
 		<link rel="stylesheet" href="css/owls8.css">
 		<!-- smooth scroll -->
 		<script src="js/smooth-scroll.js"></script>
+		<script src="js/ScrollMagic.min.js"></script>
+		<script src="js/debug.addIndicators.min.js"></script>
 	</head>
 	
 	<body>	
+		<script>
+			// init controller
+			var controller = new ScrollMagic.Controller();
+		</script>
 		
-		<nav class="navbar navbar-default navbar-fixed-top" id="navigation-bar" data-0="height:115px;" data-150="height:115px;" data-200="height:85px;">
+		<!-- navigation bar for login form and other navigation purposes -->
+		<nav class="navbar navbar-fixed-top" id="nav-top">
 			<div class="container-fluid">
+				<div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
+					<div class="navbar-header">
+						<a data-scroll class="navbar-brand" href="#">
+							<img alt="OWLS8" src="img/logo_80.png"/>
+						</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li class="link-about"><a data-scroll href="#about"><i class="fa fa-black-tie"></i> who we are</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+					
+					
+		<div class="container-fluid header" id="header1">
+			<div class="row">
+				<div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
+					<p>#shoohoo</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- navigation bar for main navigation -->
+		<nav class="navbar navbar-default" id="navigation-bar">
+			<div class="container-fluid" id="nav-container">
 				<div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#owls-navbar-collapse" aria-expanded="false">
@@ -29,32 +61,22 @@
 							<span class="icon-bar"></span>
 						</button>
 						<a data-scroll class="navbar-brand" href="#">
-							<img alt="OWLS8" src="img/logo_80.png" data-0="height:80px;width:80px;" data-150="height:80px;width:80px;" data-200="height:50px;width:50px;"/>
+							<img alt="OWLS8" src="img/logo_80.png"/>
 						</a>
 					</div>
 					
 					<div class="collapse navbar-collapse" id="owls-navbar-collapse">
 						<ul class="nav navbar-nav">
-							<li><a data-scroll href="#about"><i class="fa fa-black-tie"></i> who we are</a></li>
-							<li><a data-scroll href="#games"><i class="fa fa-gamepad"></i> what we play</a></li>
-							<li><a data-scroll href="#clothing"><i class="fa fa-users"></i> clothing</a></li>
+							<li class="link-about"><a data-scroll href="#about"><i class="fa fa-black-tie"></i> who we are</a></li>
+							<li class="link-games"><a data-scroll href="#games"><i class="fa fa-gamepad"></i> what we play</a></li>
+							<li class="link-clothing"><a data-scroll href="#clothing"><i class="fa fa-users"></i> clothing</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</nav>
-			
-		<div class="container-fluid header">
-			<div class="row">
-				<div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
-					<!--
-					<h1><p>OWLS8</p></h1>
-					<p>here we are #shoohoo gaming community...blablabla we play games!</p>
-					-->
-				</div>
-			</div>
-		</div>
-			
+		
+		
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0" id="about">
@@ -81,7 +103,7 @@
 
 					<h2>.thestaff</h2>
 					
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center spacing-vertical align-vertical-middle bubble-wrapper">
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center spacing-vertical align-vertical-middle bubble-wrapper" >
 						<figure>
 							<img class="staff-img" src="img/staff/marcus.png" alt="marcus"/>
 							<figcaption class="top">
@@ -124,7 +146,7 @@
 						<a href="mailto:lukas@owls8.net"><i class="fa fa-envelope fa-2x bubble-img top-right"></i></a>
 						<i class="fa fa-user fa-2x bubble-img mid-right"></i>
 					</div>
-					
+					<div id="nav-animation"></div>
 				</div>			
 			</div>
 		</div>
@@ -272,14 +294,34 @@
 		<!-- skrollr -->
 		<script src='js/skrollr.min.js'></script>
 		<!-- skrollr menu -->
-		<script src='js/skrollr.menu.min.js'></script>
+		<!--<script src='js/skrollr.menu.min.js'></script>-->
 		<!--[if lt IE 9]>
 		<script type="text/javascript" src="js/skrollr.ie.min.js"></script>
 		<![endif]-->
 		
 		<script type="text/javascript">
-			var s = skrollr.init();
 			smoothScroll.init();
+		</script>
+		<script>
+				// build scene
+				new ScrollMagic.Scene({triggerElement: "#nav-animation"})
+								.setPin("#navigation-bar") // add class toggle
+								.addTo(controller);
+								
+				new ScrollMagic.Scene({triggerElement: "#about", duration: "100%"})
+					.setClassToggle(".link-about", "active") // add class toggle
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+				
+				new ScrollMagic.Scene({triggerElement: "#games", duration: "100%"})
+					.setClassToggle(".link-games", "active") // add class toggle
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+					
+				new ScrollMagic.Scene({triggerElement: "#clothing", duration: "100%"})
+					.setClassToggle(".link-clothing", "active") // add class toggle
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
 		</script>
 	</body>
 </html>

@@ -69,8 +69,11 @@ $gray-color: #F1F1F1;
 */
 body {  
   font-family: Futura-Light;
-  margin-top: 130px;
   font-size: 13pt;
+}
+
+.top-135 {
+  margin-top: 135px;
 }
 
 h1 {
@@ -83,24 +86,66 @@ h1 {
   margin-bottom: 30px;
 }
 
+#nav-animation {
+  position: absolute;
+  bottom: 260px;
+}  
+
+.navbar {
+  z-index: 9999;
+}
+
+#nav-top {
+  background-color: #0066cc;
+}
+
+#nav-top img {
+  width: 30px;
+  height: 30px;
+}
 
 #navigation-bar {
   height: 115px;
   overflow: hidden;
+  padding: 0;
+  vertical-align: middle;
 }
 
-.navbar ul {
-  margin-top: 15px;
+#navigation-bar  ul {
+  margin-top: 30px;
   font-size: 18pt;
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
-.navbar-brand img {
+#navigation-bar  li {
+  height: 100%;
+}
+
+#navigation-bar .navbar-nav a {
+  height: 100%;
+  padding-top: 42px;
+}
+
+#navigation-bar .navbar-brand img {
   height: 80px;
   width: 80px;
 }
 
 .navbar .container-fluid {
   margin: 0;
+}
+
+#header1 p {
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  font-size: 80pt;
+  margin-top: -80px;
+  
 }
 
 .header {
