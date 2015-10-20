@@ -1,0 +1,41 @@
+#header-csgo {
+	background-image: url(http://i.ytimg.com/vi/HGbbqGRxznQ/maxresdefault.jpg);
+}
+
+.player {
+	margin-top: 20px;
+}
+
+.player .img {
+	min-height: 340px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.player .description {
+	border-top: 1px solid gray;
+}
+
+.player .name {
+	font-size: 18pt;
+	font-weight: bold;
+}
+
+.player .name  .nick {
+	font-weight: normal;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.player .name  .nick:before , .player .name  .nick:after {
+	content: "'";
+}
+
+.jasper .img {
+	background-image: url(img/jasper_full.png);
+}
+
+.gesa .img {
+	background-image: url(img/gesa_full.png);
+}
+

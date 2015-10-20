@@ -11,9 +11,8 @@
 		<!--bootstrap js-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
 		<!-- owls8 style -->
-		<link rel="stylesheet" href="css/owls8_bootstrapfix.css">
-		<!-- owls8 style -->
 		<link rel="stylesheet" href="css/owls8.css">
+		
 		<!-- smooth scroll -->
 		<script src="js/smooth-scroll.js"></script>
 		<script src="js/ScrollMagic.min.js"></script>

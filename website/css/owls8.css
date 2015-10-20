@@ -151,6 +151,10 @@ h1 {
   margin: 0;
 }
 
+#header1 {
+	background-position: 0% 220%;
+}
+
 #header1 p {
 	/*
 	-moz-transform: rotate(-20deg);
@@ -170,6 +174,7 @@ h1 {
   background-size: cover;
   background-position: 0px 70%;
   background-repeat: no-reapat;
+  background-attachment: fixed;
 }
 
 .header-staff {
