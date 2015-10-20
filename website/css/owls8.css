@@ -97,7 +97,7 @@ h1 {
 .container-fluid {
   margin-top: 30px;
   margin-bottom: 30px;
-  min-height: 500px;
+  min-height: 450px;
 }
 
 #nav-animation {
@@ -128,11 +128,9 @@ h1 {
 }
 
 #navigation-bar  ul {
-  margin-top: 30px;
   font-size: 18pt;
   padding: 0;
   margin: 0;
-  height: 100%;
 }
 
 #navigation-bar  li {
@@ -154,18 +152,20 @@ h1 {
 }
 
 #header1 p {
-  -moz-transform: rotate(-20deg);
-  -ms-transform: rotate(-20deg);
-  -o-transform: rotate(-20deg);
-  -webkit-transform: rotate(-20deg);
-  transform: rotate(-20deg);
-  font-size: 80pt;
-  margin-top: -80px;
-   text-shadow: 1px 2px 10px #fff; 
+	/*
+	-moz-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
+	-o-transform: rotate(-20deg);
+	-webkit-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+	*/
+	font-size: 80pt;
+	text-align: right;
+	text-shadow: 1px 2px 10px #fff; 
 }
 
 .header {
-  height: 300px;
+  height: max-300px;
   background-image: url(http://fotonin.com/data_images/out/12/861671-night-wallpaper.jpg);
   background-size: cover;
   background-position: 0px 70%;
@@ -222,9 +222,6 @@ span.game-icon {
   transition: all 1s;
 }
 
-#about .bubble-img {
-  margin-top: -45px;
-}
 
 #about .staff-img:hover {
   background: #66cc00;
@@ -238,128 +235,13 @@ span.game-icon {
   padding-bottom: 30px;
 }
 
-.gamechooser, .gamechooser .fa-stack{
+.gamechooser, .gamechooser .fa-stack {
   color: #000000; 
   transition: all 1s;
 }
 
-.gamechooser:hover {
+.gamechooser .fa-stack:hover {
   cursor: pointer;
-}
-
-.bubble-wrapper:hover .bubble-img {
-  opacity: 1;
-  width: 70px;
-  height: 70px;
-}
-
-.bubble-img {
-  color: #000;
-  line-height: 60px;
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  opacity: 0;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  border: 5px solid transparent;
-  transition: all 1s;
-}
-
-.bubble-img:hover{
-  border-color: #66cc00;
-}
-
-.show .bubble-img {
-  opacity: 1;
-  width: 70px;
-  height: 70px;
-}
-
-.bubble-wrapper:hover .top-center {
-  top: -27px;
-  left: 122px;
-}
-
-.bubble-wrapper:hover .top-right {
-  top: 5px;
-  left: 202px;
-}
-
-.show .top-right {
-  top: 5px;
-  left: 202px;
-}
-
-.bubble-wrapper .mid-right {
-  transition-delay: .1s;
-}
-
-.bubble-wrapper:hover .mid-right {
-  top: 87px;
-  left: 235px;
-}
-
-.show .mid-right {
-  top: 87px;
-  left: 235px;
-}
-
-.bubble-wrapper .bottom-right {
-  transition-delay: .2s;
-}
-
-.bubble-wrapper:hover .bottom-right {
-  top: 169px;
-  left: 202px;
-}
-
-.show .bottom-right {
-  top: 169px;
-  left: 202px;
-}
-
-.bubble-wrapper .bottom-left {
-  transition-delay: .3s;
-}
-
-.bubble-wrapper:hover .bottom-left {
-  top: 169px;
-  left: 38px;
-}
-
-.show .bottom-left {
-  top: 169px;
-  left: 38px;
-}
-
-.bubble-wrapper .mid-left {
-  transition-delay: .4s;
-}
-
-.bubble-wrapper:hover .mid-left {
-  top: 87px;
-  left: 5px;
-}
-
-.show .mid-left {
-  top: 87px;
-  left: 5px;
-}
-
-.bubble-wrapper .top-left {
-  transition-delay: .5s;
-}
-
-.bubble-wrapper:hover .top-left {
-  top: 5px;
-  left: 38px;
-}
-
-.show .top-left {
-  top: 5px;
-  left: 38px;
 }
 
 span.dota2 {
@@ -446,4 +328,212 @@ figcaption.top {
 
 #to-top:hover {
   opacity: .8;
+}
+
+@media (max-width:1199px){
+	#about {
+		margin-top: -115px;
+	}
+
+	.nav li, .nav ul {
+		float: left;
+		width: auto;
+		/*font-size: 11pt;*/
+	}
+
+	.bubble-img {
+		display: none;
+	}
+	
+	#games img {
+		width: 50px;
+		height: 50px;
+	}
+	
+	.container-fluid {
+		min-height: 300px;
+	}
+	
+	.header .quote {
+		font-size: 20pt;
+	}
+}
+
+@media (max-width: 810px) {
+	body {
+		padding-top: 30px;
+	}
+	
+	#navigation-bar {
+		height: 60px;
+	}
+	
+	#navigation-bar .navbar-brand img {
+		height: 30px;
+		width: 30px;
+		float: left;
+	}
+	
+	#navigation-bar ul, #navigation-bar li, #navigation-bar .navbar-nav a, .nav a {
+		font-size: 9pt;
+		-webkit-padding-start: 0px;
+		height: auto;
+		padding: 2px;
+		margin-top: 4px;
+	}
+	
+	.nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before {
+		content: none;	
+	}
+	
+	#header1 p {
+		font-size: 40pt;
+		text-shadow: 1px 2px 5px #fff;
+	}
+	
+	.header .quote {
+		font-size: 15pt;
+		padding-top: 50px;
+	}
+}
+
+@media (min-width:1200px){
+	.container-fluid {
+		min-height: 400px;
+	}
+	
+	.bubble-wrapper {
+		width: 308px;
+	}
+
+	.bubble-wrapper:hover .bubble-img {
+		opacity: 1;
+		width: 70px;
+		height: 70px;
+	}
+
+	div .bubble-img {
+		color: #000;
+		line-height: 60px;
+		position: absolute;
+		width: 0px;
+		height: 0px;
+		opacity: 0;
+		/*place in center of the circle*/
+		top: 50%;
+		left: 50%;
+		border-radius: 50%;
+		border: 5px solid transparent;
+		transition: all 1s;
+	}
+	
+	#about .bubble-img {
+		margin-top: -50px;
+	}
+
+	.bubble-img:hover{
+	  border-color: #66cc00;
+	}
+
+	.show .bubble-img {
+	  opacity: 1;
+	  width: 70px;
+	  height: 70px;
+	}
+
+	.bubble-wrapper:hover .top-center {
+	  top: -27px;
+	  left: 122px;
+	}
+
+	.show .top-center {
+	  top: -27px;
+	  left: 122px;
+	}
+
+	.bubble-wrapper:hover .top-right {
+	  top: 5px;
+	  left: 202px;
+	  //margin-top: -120px;
+	  //margin-left: 46px; 
+	}
+
+	.show .top-right {
+	  top: 5px;
+	  left: 202px;
+	}
+	
+	.show:hover .bubble-img {
+		margin:0;
+	}
+
+	.bubble-wrapper .mid-right {
+	  transition-delay: .1s;
+	}
+
+	.bubble-wrapper:hover .mid-right {
+	  top: 87px;
+	  left: 235px;
+	}
+
+	.show .mid-right {
+	  top: 87px;
+	  left: 235px;
+	}
+
+	.bubble-wrapper .bottom-right {
+	  transition-delay: .2s;
+	}
+
+	.bubble-wrapper:hover .bottom-right {
+	  top: 169px;
+	  left: 202px;
+	}
+
+	.show .bottom-right {
+	  top: 169px;
+	  left: 202px;
+	}
+
+	.bubble-wrapper .bottom-left {
+	  transition-delay: .3s;
+	}
+
+	.bubble-wrapper:hover .bottom-left {
+	  top: 169px;
+	  left: 38px;
+	}
+
+	.show .bottom-left {
+	  top: 169px;
+	  left: 38px;
+	}
+
+	.bubble-wrapper .mid-left {
+	  transition-delay: .4s;
+	}
+
+	.bubble-wrapper:hover .mid-left {
+	  top: 87px;
+	  left: 5px;
+	}
+
+	.show .mid-left {
+	  top: 87px;
+	  left: 5px;
+	}
+
+	.bubble-wrapper .top-left {
+	  transition-delay: .5s;
+	}
+
+	.bubble-wrapper:hover .top-left {
+	  top: 5px;
+	  left: 38px;
+	}
+
+	.show .top-left {
+	  top: 5px;
+	  left: 38px;
+	}
 }

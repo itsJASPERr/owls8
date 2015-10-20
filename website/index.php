@@ -29,26 +29,17 @@
 		<!-- navigation bar for main navigation -->
 		<nav class="navbar navbar-default navbar-fixed-top" id="navigation-bar" role="navigation">
 			<div class="container-fluid" id="nav-container">
-				<div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
+				<div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#owls-navbar-collapse-1" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
 						<a class="navbar-brand" href="#top">
 							<img alt="OWLS8" src="img/logo_80.png"/>
 						</a>
 					</div>
-					
-					<div class="collapse navbar-collapse" id="owls-navbar-collapse-1">
-						<ul class="nav navbar-nav">
-							<li class="link-about"><a href="#about"><i class="fa fa-black-tie"></i> who we are</a></li>
-							<li class="link-games"><a href="#games"><i class="fa fa-gamepad"></i> what we play</a></li>
-							<li class="link-clothing"><a href="#clothing"><i class="fa fa-users"></i> clothing</a></li>
-						</ul>
-					</div>
+					<ul class="nav navbar-nav">
+						<li class="link-about"><a href="#about"><i class="fa fa-black-tie"></i> who we are</a></li>
+						<li class="link-games"><a href="#games"><i class="fa fa-gamepad"></i> what we play</a></li>
+						<li class="link-clothing"><a href="#clothing"><i class="fa fa-users"></i> clothing</a></li>
+					</ul>					
 				</div>
 			</div>
 		</nav>
@@ -56,15 +47,15 @@
 					
 		<div class="container-fluid header" id="header1">
 			<div class="row">
-				<div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
+				<div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
 					<p>#shoohoo</p>
 				</div>
 			</div>
 		</div>		
-		
+	
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-sm-offset-0 col-xs-offset-0" id="about">
+				<div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-0 col-sm-offset-0 col-xs-offset-0" id="about">
 					<h1><i class="fa fa-black-tie"></i> who we are</h1>	
 					<div class="panel panel-default col-md-12">
 						<div class="panel-body">
@@ -88,7 +79,7 @@
 
 					<h2>.thestaff</h2>
 					
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center spacing-vertical align-vertical-middle bubble-wrapper" >
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 text-center spacing-vertical align-vertical-middle bubble-wrapper" >
 						<figure>
 							<img class="staff-img" src="img/staff/marcus.png" alt="marcus"/>
 							<figcaption class="top">
@@ -96,13 +87,23 @@
 							</figcaption>
 							<figcaption>
 								marcus, founder and manager for <span style="font-family:csgo;">cs-go</span> and public relations,  recruiting
+								
+								<span class="hidden-lg">
+								<hr/>
+								<a href="mailto:marcus@owls8.net"><i class="fa fa-envelope"></i></a>
+								<a target="_blank" href="http://twitter.com/marcus_csgo"><i class="fa fa-twitter"></i></a>
+								<a target="_blank" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+								<a target="_blank" href="http://twitch.tv/"><i class="fa fa-twitch"></i></a>
+								</span>
 							</figcaption>
 						</figure>
-						<a href="mailto:marcus@owls8.net"><i class="fa fa-envelope fa-2x bubble-img top-right"></i></a>
-						<i class="fa fa-user fa-2x bubble-img mid-right"></i>
+						<a href="mailto:marcus@owls8.net"><i class="fa fa-envelope fa-2x bubble-img bottom-left visible-lg"></i></a>
+						<a target="_blank" href="http://twitter.com/marcus_csgo"><i class="fa fa-twitter fa-2x bubble-img top-right visible-lg"></i></a>
+						<a target="_blank" href="http://facebook.com/"><i class="fa fa-facebook fa-2x bubble-img mid-right visible-lg"></i></a>
+						<a target="_blank" href="http://twitch.tv/"><i class="fa fa-twitch fa-2x bubble-img bottom-right visible-lg"></i></a>
 					</div>
 				
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center spacing-vertical align-vertical-middle bubble-wrapper">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 text-center spacing-vertical align-vertical-middle bubble-wrapper" >
 						<figure>
 							<img class="staff-img" src="img/staff/jm.png" alt="jm">
 							<figcaption class="top">
@@ -110,26 +111,42 @@
 							</figcaption>
 							<figcaption>
 								jasper, founder and manager for <span style="font-family:csgo;">cs-go</span> and <span style="font-family:league;">LoL</span> relations, recruiting
+								<span class="hidden-lg">
+								<hr/>
+								<a href="mailto:jasper@owls8.net"><i class="fa fa-envelope "></i></a>
+								<a target="_blank" href="http://twitter.com/OW8_itsJASPERr"><i class="fa fa-twitter "></i></a>
+								<a target="_blank" href="http://facebook.com/itsJASPERr"><i class="fa fa-facebook "></i></a>
+								<a target="_blank" href="http://twitch.tv/itsJASPERr"><i class="fa fa-twitch "></i></a>
+								</span>
 							</figcaption>
 						</figure>
-						<a href="mailto:jasper@owls8.net"><i class="fa fa-envelope fa-2x bubble-img top-right"></i></a>
-						<i class="fa fa-user fa-2x bubble-img mid-right"></i>
+						<a href="mailto:jasper@owls8.net"><i class="fa fa-envelope fa-2x bubble-img bottom-left visible-lg"></i></a>
+						<a target="_blank" href="http://twitter.com/OW8_itsJASPERr"><i class="fa fa-twitter fa-2x bubble-img top-right visible-lg"></i></a>
+						<a target="_blank" href="http://facebook.com/itsJASPERr"><i class="fa fa-facebook fa-2x bubble-img mid-right visible-lg"></i></a>
+						<a target="_blank" href="http://twitch.tv/itsJASPERr"><i class="fa fa-twitch fa-2x bubble-img bottom-right visible-lg"></i></a>
 					</div>
 					
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center spacing-vertical align-vertical-middle bubble-wrapper">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 text-center spacing-vertical align-vertical-middle bubble-wrapper" >
 						<figure>
-							
 							<img class="staff-img" src="img/staff/lukas.png" alt="lukas">
 							<figcaption class="top">
 								WideKawa
 							</figcaption>
 							<figcaption>
-								lukas,
-								manager for <span style="font-family:league;">LoL</span> and <span style="font-family:iracing;">iRacing</span> relations, coaching, and recruiting
+								lukas, manager for <span style="font-family:league;">LoL</span> and <span style="font-family:iracing;">iRacing</span> relations, coaching, and recruiting
+								<span class="hidden-lg">
+								<hr/>
+								<a href="mailto:lukas@owls8.net"><i class="fa fa-envelope "></i></a>
+								<a target="_blank" href="http://twitter.com/"><i class="fa fa-twitter "></i></a>
+								<a target="_blank" href="http://facebook.com/"><i class="fa fa-facebook "></i></a>
+								<a target="_blank" href="http://twitch.tv/give_awake"><i class="fa fa-twitch "></i></a>
+								</span>
 							</figcaption>
 						</figure>
-						<a href="mailto:lukas@owls8.net"><i class="fa fa-envelope fa-2x bubble-img top-right"></i></a>
-						<i class="fa fa-user fa-2x bubble-img mid-right"></i>
+						<a href="mailto:lukas@owls8.net"><i class="fa fa-envelope fa-2x bubble-img bottom-left visible-lg"></i></a>
+						<a target="_blank" href="http://twitter.com/"><i class="fa fa-twitter fa-2x bubble-img top-right visible-lg"></i></a>
+						<a target="_blank" href="http://facebook.com/"><i class="fa fa-facebook fa-2x bubble-img mid-right visible-lg"></i></a>
+						<a target="_blank" href="http://twitch.tv/give_awake"><i class="fa fa-twitch fa-2x bubble-img bottom-right visible-lg"></i></a>
 					</div>
 					<div id="nav-animation"></div>
 				</div>			
@@ -151,7 +168,7 @@
 			
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0" id="games">
+				<div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-0 col-sm-offset-0 col-xs-offset-0" id="games">
 				<h1><i class="fa fa-gamepad"></i> what we play</h1>
 					<div class="panel panel-default col-md-12">
 						<div class="panel-body">
@@ -184,13 +201,34 @@
 						-->
 						<img class="bubble-img bottom-right" src="img/staff/thumbnails/gesa.png"/>
 						<span class="bubble-img top-left">details</span>
+						
+						<span class="hidden-lg">
+							<div class="col-sm-12 col-sm-offset-0 col-xs-6 col-xs-offset-3 text-center">
+								<img src="img/staff/thumbnails/marcus.png" alt="marcus"/>
+								<img src="img/staff/thumbnails/jm.png" alt="jm"/>
+								<img src="https://scontent.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/1381380_4753080365089_1523282077_n.jpg?oh=d99ebfee919bf169d3546faf3cc7de81&oe=56CC46DB"/>
+								<img src="https://scontent.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/376603_551801391516272_2049394470_n.jpg?oh=ebc1fcad9e6d49908cbcf46d6585f54e&oe=5698222E" />
+								<!--
+								<img src="img/staff/thumbnails/anna.png"/>
+								<img src="img/staff/thumbnails/robin.png" />
+								-->
+								<img src="img/staff/thumbnails/gesa.png"/>
+							</div>
+						</span>
 					</div>
+					
 					<div class="col-md-3 col-sm-6 col-xs-12 text-center spacing-vertical align-vertical-middle gamechooser bubble-wrapper">
 						<span class="fa-stack fa-5x">
 							<i class="fa fa-circle fa-stack-2x"></i>
 							<span class="fa fa-stack-1x game lol"></span>							
 						</span>
 						<img class="bubble-img top-right" src="https://pbs.twimg.com/profile_images/529280964812214272/JRGgKWr5.jpeg"/>
+						
+						<span class="hidden-lg">
+							<div class="col-sm-12 col-sm-offset-0 col-xs-6 col-xs-offset-3 text-center">
+								<img src="https://pbs.twimg.com/profile_images/529280964812214272/JRGgKWr5.jpeg"/>
+							</div>
+						</span>
 					</div>
 					<div class="col-md-3 col-sm-6 col-xs-12 text-center spacing-vertical align-vertical-middle gamechooser bubble-wrapper">
 						<span class="fa-stack fa-5x">
@@ -198,6 +236,13 @@
 							<span class="fa fa-stack-1x game iracing"></span>							
 						</span>
 						<img class="bubble-img top-right" src="img/staff/thumbnails/lukas.png"/>
+						
+						<span class="hidden-lg">
+							<div class="col-sm-12 col-sm-offset-0 col-xs-6 col-xs-offset-3 text-center">
+								<img src="img/staff/thumbnails/lukas.png"/>
+							</div>
+						</span>
+						
 					</div>
 					<div class="col-md-3 col-sm-6 col-xs-12 text-center spacing-vertical align-vertical-middle gamechooser bubble-wrapper">
 						<span class="fa-stack fa-5x">
@@ -224,7 +269,7 @@
 	
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0" id="clothing">
+				<div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-0 col-sm-offset-0 col-xs-offset-0" id="clothing">
 					<h1><i class="fa fa-users"></i> clothing</h1>
 					
 					<div class="panel panel-default col-md-12">
@@ -299,7 +344,7 @@
 			
 			// init controller
 			var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: 0}});
-			if (x > 1000) {
+			if (x > 1200) {
 				
 				// build scene
 				new ScrollMagic.Scene({triggerElement: "#navigation-bar"})
